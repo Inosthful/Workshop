@@ -1,4 +1,6 @@
 import Navigation from '../components/Navigation';
+import Presentation from '../components/Presentation';
+import ProposeHelp from '../components/ProposeHelp';
 
 
 const Home = () => {
@@ -18,7 +20,11 @@ const Home = () => {
                 </div>
                 <div className="left-[80px] top-[262px] absolute text-black text-[129.39px] font-bold font-['Ubuntu']">👋</div>
             </div>
+            <Presentation/>
+            <ProposeHelp/>
+            
         </div>
+ 
     );
 };
 
