@@ -1,6 +1,7 @@
 import Navigation from '../components/Navigation';
 import Presentation from '../components/Presentation';
 import ProposeHelp from '../components/ProposeHelp';
+import Trait from '../components/Trait';
 
 const Home = () => {
     return (
@@ -20,7 +21,7 @@ const Home = () => {
             </div>
             <Presentation/>
             <ProposeHelp/>
-            
+            <Trait/>
         </div>
  
     );
