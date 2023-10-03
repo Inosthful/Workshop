@@ -1,3 +1,4 @@
+import Footer from '../components/Footer';
 import { Landing } from '../components/Landing';
 import Navigation from '../components/Navigation';
 import Presentation from '../components/Presentation';
@@ -12,6 +13,7 @@ const Home = () => {
             <Presentation/>
             <ProposeHelp/>
             <Trait/>
+            <Footer/>
         </div>
  
     );
