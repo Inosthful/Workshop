@@ -1,22 +1,20 @@
 import Navigation from '../components/Navigation';
 
-
 const Home = () => {
     return (
         <div>
             <Navigation />
-            <div className="bg-neutral-800">
-                <div className="w-[60vw] text-center m-auto text-zinc-300 text-[65px] font-bold font-['Ubuntu']">Participer a la vie locale de votre quartier</div>
-                <div className="text-center text-zinc-300 text-xl font-normal font-['Amaranth']">Donner un coup de main  a vos commerçant/association</div>
-                <img className="w-[80vw] h-[625px] left-[135px] top-[318px] rounded-[10px] shadow border-4 border-neutral-200" src="https://via.placeholder.com/1170x625" />
-                <div className="left-[1067px] top-[907px] justify-start items-start inline-flex">
-                    <img className="w-[72px] h-[72px] rounded-full border-4 border-neutral-200" src="https://via.placeholder.com/72x72" />
-                    <img className="w-[72px] h-[72px] rounded-full border-4 border-neutral-200" src="https://via.placeholder.com/72x72" />
-                    <img className="w-[72px] h-[72px] rounded-full border-4 border-neutral-200" src="https://via.placeholder.com/72x72" />
-                    <img className="w-[72px] h-[72px] rounded-full border-4 border-neutral-200" src="https://via.placeholder.com/72x72" />
-                    <img className="w-[72px] h-[72px] rounded-full border-4 border-neutral-200" src="https://via.placeholder.com/72x72" />
+            <div className="bg-neutral-800 pb-12">
+                <div className="pb-6 pt-24 line leading-none w-[80vw] text-center m-auto text-zinc-300 text-[6vw] font-bold font-['Ubuntu']">Participer a la vie locale de votre quartier</div>
+                <div className="pb-32 text-center m-auto text-zinc-300 text-xl font-normal font-['Amaranth']">Donner un coup de main  a vos commerçant/association</div>
+                <img className="m-auto w-[80vw] h-[625px] rounded-[10px] shadow border-4 border-neutral-200 object-cover" src="https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" />
+                <div className="left-[100px] -top-[40px] justify-end items-start inline-flex relative">
+                    <img className="w-[72px] h-[72px] rounded-full border-4 border-neutral-200" src="https://source.unsplash.com/random/400x400/?face,volonteer,1" />
+                    <img className="w-[72px] h-[72px] rounded-full border-4 border-neutral-200 -ml-8" src="https://source.unsplash.com/random/400x400/?face,volonteer,2" />
+                    <img className="w-[72px] h-[72px] rounded-full border-4 border-neutral-200 -ml-8" src="https://source.unsplash.com/random/400x400/?face,volonteer,3" />
+                    <img className="w-[72px] h-[72px] rounded-full border-4 border-neutral-200 -ml-8" src="https://source.unsplash.com/random/400x400/?face,volonteer,4" />
+                    <img className="w-[72px] h-[72px] rounded-full border-4 border-neutral-200 -ml-8" src="https://source.unsplash.com/random/400x400/?face,volonteer,5" />
                 </div>
-                <div className="left-[80px] top-[262px] text-black text-[129.39px] font-bold font-['Ubuntu']">👋</div>
             </div>
         </div>
     );
