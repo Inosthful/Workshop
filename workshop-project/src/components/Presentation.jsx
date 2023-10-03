@@ -1,6 +1,6 @@
 const Presentation = () => {
     return (
-        <div className="flex justify-center items-center bg-neutral-800 pb-12">
+        <div className="flex justify-center items-center bg-[color:var(--background)] pb-12">
         <div className="w-[90%] justify-between  items-start md:inline-flex px-5">
             <div className="flex-col justify-start items-start gap-5 inline-flex">
                 <div className="align-center text-center w-full lg:text-start text-white text-[60px] break-words">1.</div>

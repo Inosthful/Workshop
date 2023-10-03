@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
     return (
-        <div className="w-[100%] px-[50px] py-[23px] bg-neutral-800 flex-col justify-start items-start gap-2.5 inline-flex">
+        <div className="w-[100%] px-[50px] py-[23px] bg-[color:var(--background)] flex-col justify-start items-start gap-2.5 inline-flex">
             <div className="self-stretch h-[50px] justify-between items-center inline-flex ">
                 <div className="w-[60px] h-[54px] relative">
                     <NavLink to="/" className={(navData) => (navData.isActive ? "active-style" : 'none')}>
