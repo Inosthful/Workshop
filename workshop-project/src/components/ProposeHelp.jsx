@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const ProposeHelp = () => {
     return (
-<div className="pt-10 py-6  flex justify-center bg-neutral-800">
+<div className="pt-10 py-6  flex justify-center bg-[color:var(--background)]">
     <div className=""> <img src="../src/assets/fleches.png" alt="fleches" /></div>
     <div className="">
 <NavLink to="/locaux" className={(navData) => (navData.isActive ? "active-style" : 'none')}>
