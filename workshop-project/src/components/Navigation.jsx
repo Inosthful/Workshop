@@ -1,3 +1,4 @@
+import { User } from "lucide-react";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
@@ -6,7 +7,11 @@ const Navigation = () => {
         <div className="w-[100%] px-[50px] py-[23px] bg-neutral-800 flex-col justify-start items-start gap-2.5 inline-flex">
             <div className="self-stretch h-[50px] justify-between items-center inline-flex ">
                 <div className="w-[60px] h-[54px] relative">
-                    <img className="w-[60px] h-[54px]" src="https://via.placeholder.com/60x54" />
+                    <NavLink to="/" className={(navData) => (navData.isActive ? "active-style" : 'none')}>
+                    <img className="w-[60px] h-[54px]" src="../src/assets/white 1.png" />
+                    </NavLink>
+                
+                    
                 </div>
                 <div className="justify-start items-center gap-[35px] flex text-white">
                     <div className="justify-start items-center gap-[30px] flex">
@@ -28,7 +33,8 @@ const Navigation = () => {
                                 <li>
                                     <NavLink to="/missions" className={(navData) => (navData.isActive ? "active-style" : 'none')}>
 
-                                        <div className="px-5 py-[15px] bg-zinc-100 rounded-[100px] justify-start items-center gap-2.5 flex">
+                                        <div className="">
+                                        <User/>
                                         </div>
                                     </NavLink>
                                 </li>
