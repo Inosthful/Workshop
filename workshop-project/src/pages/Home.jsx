@@ -12,10 +12,8 @@ const Home = () => {
             <Landing />
             <Presentation/>
             <ProposeHelp/>
-
             <Footer/>
         </div>
- 
     );
 };
 
