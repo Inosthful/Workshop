@@ -9,7 +9,7 @@ import Input from '../components/Input';
 
 const RegisterUser = () => {
     return (
-        <div className="bg-[color:var(--background)]">
+        <div className="bg-[color:var(--background)] over">
             <Navigation />
             <FormBaseSignUp />
             <div className="flex justify-center flex-col items-center mt-10 pb-24">

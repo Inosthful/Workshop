@@ -12,7 +12,7 @@ import Input from "../components/Input";
 
 const SignInUser = () => {
     return (
-        <div className="bg-[color:var(--background)]">
+        <div className="bg-[color:var(--background)] over">
                     <Navigation/>
             <FormBaseSignIn/>
             <div className="flex justify-center flex-col items-center mt-10">

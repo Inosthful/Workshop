@@ -16,7 +16,7 @@ input{
 }
 
 @media (min-width: 768px){
-    body{
-        overflow-y: hidden;
+    .over{
+        overflow: hidden;
     }
 }

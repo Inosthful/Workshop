@@ -9,7 +9,7 @@ import Input from '../components/Input';
 
 const RegisterOrg = () => {
     return (
-        <div className="bg-[color:var(--background)]">
+        <div className="bg-[color:var(--background)] v">
             <Navigation/>
             <FormBaseSignUp/>
 
