@@ -39,8 +39,8 @@ const SignInOrg = () => {
                                     </div>
                                     <div className='flex flex-col text-right justify-end items-end pr-5 pt-20'>
 
-                                        <button className="px-10 py-[12px] mt-10  bg-amber-300 rounded-[100px] justify-start items-center gap-2.5 flex text-black " type="submit">S'inscrire</button>
-                                        <NavLink to="/login/register/org" className={(navData) => (navData.isActive ? "underline bold text-yellow-400" : 'none')}><div className=" pt-5 items-start  text-gray-500 underline">Vous avez deja un compte ? Connectez vous ici !</div></NavLink>
+                                        <button className="px-10 py-[12px] mt-10  bg-amber-300 rounded-[100px] justify-start items-center gap-2.5 flex text-black " type="submit">Se connecter</button>
+                                        <NavLink to="/login/register/org" className={(navData) => (navData.isActive ? "underline bold text-yellow-400" : 'none')}><div className=" pt-5 items-start  text-gray-500 underline">Vous n'avez pas de compte ? Créez le ici !</div></NavLink>
 
                                     </div>
 
