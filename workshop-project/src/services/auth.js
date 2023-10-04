@@ -1,32 +1,23 @@
-// code an auth service with api calls to the backend
 import axios from 'axios';
 
 class AuthService {
   constructor() {
     let service = axios.create({
-      baseURL: 'http://localhost:5000/api',
+      baseURL: 'http://localhost:3000/auth',
       withCredentials: true
     });
     this.service = service;
   }
 
-  signup = (username, password) => {
-    return this.service.post('/signup', {username, password})
-    .then(response => response.data)
+  async signinUser() {
+      return await this.service.get('/signinUser')
+      .then((response) => {
+        return response['data']
+      })
+      .catch((e) => {
+        throw e
+      })
   }
 
-  login = (username, password) => {
-    return this.service.post('/login', {username, password})
-    .then(response => response.data)
-  }
-
-  logout = () => {
-    return this.service.post('/logout', {})
-    .then(response => response.data)
-  }
-
-  loggedin = () => {
-    return this.service.get('/loggedin')
-    .then(response => response.data)
-  }
 }
+
