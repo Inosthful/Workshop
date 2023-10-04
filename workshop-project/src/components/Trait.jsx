@@ -1,8 +1,5 @@
 import Footer from "./Footer";
 
-
-
-
 const Trait = () => {
     return (
         <div className="absolute ">
