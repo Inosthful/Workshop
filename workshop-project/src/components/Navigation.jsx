@@ -30,13 +30,7 @@ const Navigation = () => {
                                     </NavLink>
                                 </li>
                         
-                                      <li>
-                                    <NavLink to="/user" className={(navData) => (navData.isActive ? "active-style" : 'none')}>
-                                        <div className="">
-                                            <User />
-                                        </div>
-                                    </NavLink>
-                                    </li>
+   
 
                                     <li>
                                     <NavLink to="/login/signin/user" className={(navData) => (navData.isActive ? "active-style" : 'none')}>

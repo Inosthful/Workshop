@@ -17,14 +17,14 @@ const RegisterOrg = () => {
                 <div className="flex justify-center flex-col items-center  rounded-xl ">
        
                     <form action="" method="post"></form>
-                    <div className="w-[430px] md:w-[480px] h-[500px] px-[5px] py-5 bg-white rounded-[10px] shadow justify-start items-start gap-2.5 inline-flex mb-5">
+                    <div className="w-[430px] md:w-[480px] h-[450px] px-[5px] py-5 bg-white rounded-[10px] shadow justify-start items-start gap-2.5 inline-flex mb-5">
                         <div className="flex-col justify-start items-start gap-5 inline-flex">
                             <div className="flex-col text-center gap-[61px] flex">
                                 <div className="flex-col gap-[25px] flex">
                                     <div className="text-left text-black items-start text-base font-medium font-['Ubuntu'] pl-3 ">Inscription</div>
                                     <div className="inline-flex flex-col">
                                         <div className='flex flex-row gap-3 my-1 md:my-2'>
-                                            <div className=" h-[50px] text-[11px] bg-zinc-200 rounded-[121.27px] justify-start items-center gap-2.5 flex">
+                                            <div className="ml-3 h-[50px] text-[11px] bg-zinc-200 rounded-[121.27px] justify-start items-center gap-2.5 flex">
                                                 <div className="text-black text-base font-normal font-['Ubuntu'] "><Input  placeholder="      Nom" type="text"/></div>
                                             </div>
                                             <div className=" h-[50px] text-[11px]  bg-zinc-200 rounded-[121.27px] justify-start items-center gap-2.5 flex">
@@ -32,8 +32,8 @@ const RegisterOrg = () => {
                                             </div>
                                         </div>
                                         <div className='flex flex-row gap-3 my-1 md:my-2'>
-                                            <div className=" h-[50px] text-[11px]  bg-zinc-200 rounded-[121.27px] justify-start items-center gap-2.5 flex">
-                                                <div className="text-black text-base font-normal font-['Ubuntu']"><Input placeholder="      Email" type="email" /></div>
+                                            <div className="ml-3  h-[50px] text-[11px]  bg-zinc-200 rounded-[121.27px] justify-start items-center gap-2.5 flex">
+                                                <div className=" text-black text-base font-normal font-['Ubuntu']"><Input placeholder="      Email" type="email" /></div>
                                             </div>
                                             <div className="h-[50px] text-[11px] bg-zinc-200 rounded-[121.27px] justify-start items-center gap-2.5 flex">
                                                 <div className="text-black text-base font-normal font-['Ubuntu']"><Input placeholder="      Siret" type="text" /></div>
