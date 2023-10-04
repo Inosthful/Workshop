@@ -1,5 +1,18 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' rel='stylesheet' />
+    <title>Workshop</title>
+  </head>
+  
+  <body>
+    <div id="root"></div>
 
 <head>
   <meta charset="UTF-8" />
@@ -18,6 +31,19 @@
 
 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoianVqdTE0OSIsImEiOiJjbG5hNHR2MjUwMGRjMmlvM2l3amV0aTYwIn0.QlDL3RVdUNFWPx9gfMPQgA';
+    const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v12', // style URL
+        center: [-74.5, 40], // starting position [lng, lat]
+        zoom: 9, // starting zoom
+    });
+    </script>
+  </body>
+</html>
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
   <script type="module" src="/src/main.jsx"></script>
