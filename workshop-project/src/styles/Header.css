@@ -1,0 +1,22 @@
+input{
+    font-size: 15px;
+    
+}
+
+@media (min-width: 769px) {
+    input{
+        font-size: 16px;
+
+    }
+}
+@media (min-width: 1024px) {
+    input{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px){
+    body{
+        overflow-y: hidden;
+    }
+}
