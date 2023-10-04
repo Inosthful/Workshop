@@ -19,8 +19,9 @@ const Footer = () => {
         //                 <img className="w-[200%] max-w-[200%]" src="../src/assets/white 1.png" alt="" />              </div>                    <div className="flex-col justify-start items-start gap-5 inline-flex">
         //                 <div className="align-center text-center w-full lg:text-start text-white text-[60px] break-words"></div>
         //                 <img className="w-[200%] max-w-[200%]" src="../src/assets/white 1.png" alt="" />              </div>
-
-
+        //             <div className="flex-col justify-start items-start gap-5 inline-flex">
+        //                 <div className="align-center text-center w-full lg:text-start text-white text-[60px] break-words"></div>
+        //                 <img className="w-[200%] max-w-[200%]" src="../src/assets/white 1.png" alt="" />              </div>
 
         //         </div>
         //     </div>
@@ -43,10 +44,29 @@ const Footer = () => {
                     
         //         <div className=" break-words text-center text-white text-md md:text-lg w-[94%] pr-10"> <span className="underline">Email:</span> <br />CoeurLocalEpsiWorkshop@gmail.com / inosthful@gmail.com / zou@gmail.com / guillaume@gmail.com dddddddddddd</div>
         //         </div>
+                
         //     </div>
         // </div>
         // </div>
-<div></div>
+
+
+<footer class="bg-[color:var(--background)]  rounded-xs shadow pt-10 ">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-gray-500 sm:text-center ">© 2023 <a href="https://flowbite.com/" class="hover:underline">"CoeurLocal"</a>. All Rights Reserved.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 sm:mt-0">
+        <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6 ">A propos</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline">Contact</a>
+        </li>
+    </ul>
+    </div>
+</footer>
+
+
+
     )
 }
 
