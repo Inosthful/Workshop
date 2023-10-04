@@ -5,10 +5,6 @@ import { renderToString } from 'react-dom/server';
 import { ArrowLeft, X } from 'lucide-react';
 import { Mission } from '../services/mission'
 
-const searchMissions = (search) => {
-    return missions.filter((mission) => mission.name.toLowerCase().includes(search.toLowerCase()));
-}
-
 function flyTo(map, location) {
     map.flyTo({
         center: location,
@@ -32,7 +28,7 @@ const Missions = () => {
     const [filteredMissions, setFilteredMissions] = useState(missions);
 
     const searchMissions = (search) => {
-        return missions.filter((mission) => mission.name.toLowerCase().includes(search.toLowerCase()));
+        return missions.filter((mission) => mission.m_nom.toLowerCase().includes(search.toLowerCase()));
     };
 
     const flyTo = (map, location) => {
@@ -55,18 +51,20 @@ const Missions = () => {
 
         missionService.getAllMissions()
             .then((missions) => {
-                setMissions(missions); // Mettez à jour le state avec les missions récupérées
+                setMissions(missions);
                 for (const mission of missions) {
+                    console.log(mission);
+                    const m_location = mission.m_location.split(',').reverse();
                     const el = document.createElement('div');
                     el.className = 'marker';
 
                     new mapboxgl.Marker(el)
-                        .setLngLat(mission.location)
+                        .setLngLat(m_location)
                         .addTo(map.current);
 
                     el.addEventListener('click', () => {
                         setSelectedMission(mission);
-                        flyTo(map.current, mission.location);
+                        flyTo(map.current, m_location);
                     });
                 }
             })
@@ -84,43 +82,35 @@ const Missions = () => {
                 </div>
                 {
                     searchMissions(search).map((mission, index) => (
-                        <MissionTile key={index} mission={mission} onClick={() => {setSelectedMission(mission); flyTo(map.current, mission.location)}} />
+                        <MissionTile key={index} mission={mission} onClick={() => {setSelectedMission(mission); flyTo(map.current, mission.m_location.split(',').reverse())}} />
                     ))
                 }
             </div>
             <div className={`fixed top-0 bottom-0 left-[430px] z-10 ${selectedMission ? 'block' : 'hidden'} bg-white p-5 w-[400px] h-[100%] overflow-auto shadow-xl`}>
                 <div className="flex flex-row justify-between items-center mb-4">
-                    <h1 className="text-2xl font-bold">{selectedMission?.name}</h1>
+                    <h1 className="text-2xl font-bold">{selectedMission?.m_nom}</h1>
                     <X size={24} className="cursor-pointer" onClick={() => setSelectedMission(null)} />
                 </div>
-                <p className="mb-4">{selectedMission?.description}</p>
+                <p className="mb-4">{selectedMission?.m_description}</p>
                 <div className="flex flex-wrap mb-4">
                     <div className="w-full md:w-1/2 lg:w-1/3 p-2">
                         <h2 className="text-lg font-bold mb-2">Distance</h2>
-                        <p>{selectedMission?.distance} km</p>
+                        <p>2.5 km</p>
                     </div>
                     <div className="w-full md:w-1/2 lg:w-1/3 p-2">
                         <h2 className="text-lg font-bold mb-2">Date</h2>
-                        <p>{selectedMission?.date}</p>
+                        <p>{new Date(selectedMission?.m_date).toLocaleDateString()}</p>
                     </div>
                     <div className="w-full md:w-1/2 lg:w-1/3 p-2">
-                        <h2 className="text-lg font-bold mb-2">Duration</h2>
-                        <p>{selectedMission?.duration}</p>
+                        <h2 className="text-lg font-bold mb-2">Categorie</h2>
+                        <p>{selectedMission?.categorie}</p>
                     </div>
-                </div>
-                <div className="mb-4">
-                    <h2 className="text-lg font-bold mb-2">Requirements</h2>
-                    <ul className="list-disc pl-4">
-                        {selectedMission?.requirements.map((requirement, index) => (
-                            <li key={index}>{requirement}</li>
-                        ))}
-                    </ul>
                 </div>
                 <div>
                     <h2 className="text-lg font-bold mb-2">Contact</h2>
-                    <p>{selectedMission?.contactName}</p>
-                    <p>{selectedMission?.contactEmail}</p>
-                    <p>{selectedMission?.contactPhone}</p>
+                    <p>{selectedMission?.organisateur}</p>
+                    <p>{selectedMission?.mail_organisateur}</p>
+                    <p>{selectedMission?.telephone_organisateur}</p>
                 </div>
             </div>
             <div className="flex flex-col justify-center items-center fixed h-[100vh] w-[calc(100%-430px)] right-0 top-0 bottom-0 z-0">
