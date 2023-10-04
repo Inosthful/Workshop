@@ -1,16 +1,16 @@
-import '../styles/App.css'
+import './styles/App.css'
 import React from 'react';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Locaux from "../pages/Locaux";
-import Missions from "../pages/Missions";
-import Home from "../pages/Home";
-import Login from '../pages/Login';
-import SignInUser from '../pages/SignInUser';
-import SignInOrg from '../pages/SignInOrg';
-import RegisterUser from '../pages/RegisterUser';
-import RegisterOrg from '../pages/RegisterOrg';
+import Locaux from "./pages/Locaux";
+import Missions from "./pages/Missions";
+import Home from "./pages/Home";
+import Login from './pages/Login';
+import SignInUser from './pages/SignInUser';
+import SignInOrg from './pages/SignInOrg';
+import RegisterUser from './pages/RegisterUser';
+import RegisterOrg from './pages/RegisterOrg';
 
 
 import mapboxgl from 'mapbox-gl';

@@ -4,7 +4,11 @@ export class Mission {
   constructor() {
     let service = axios.create({
       baseURL: 'http://localhost:3000/mission',
-      withCredentials: true
+      withCredentials: true,
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      }
     });
     this.service = service;
   }
