@@ -9,7 +9,7 @@ import Input from "../components/Input";
 
 const SignInOrg = () => {
     return (
-        <div className="bg-[color:var(--background)] over">
+        <div className="bg-[color:var(--background)] h-[100vh] overflow-hidden">
                   <Navigation/>
             <FormBaseSignIn/>
             <div className="flex justify-center flex-col items-center mt-10">
@@ -40,7 +40,7 @@ const SignInOrg = () => {
                                     <div className='flex flex-col text-right justify-end items-end pr-5 pt-20'>
 
                                         <button className="px-10 py-[12px] mt-10  bg-amber-300 rounded-[100px] justify-start items-center gap-2.5 flex text-black " type="submit">S'inscrire</button>
-                                        <NavLink to="/login/register/org" className={(navData) => (navData.isActive ? "underline bold text-yellow-400" : 'none')}><div className=" pt-5 items-start mb-[13rem] md:mb-[15rem] text-gray-500 underline">Vous avez deja un compte ? Connectez vous ici !</div></NavLink>
+                                        <NavLink to="/login/register/org" className={(navData) => (navData.isActive ? "underline bold text-yellow-400" : 'none')}><div className=" pt-5 items-start  text-gray-500 underline">Vous avez deja un compte ? Connectez vous ici !</div></NavLink>
 
                                     </div>
 

@@ -9,10 +9,10 @@ import Input from '../components/Input';
 
 const RegisterUser = () => {
     return (
-        <div className="bg-[color:var(--background)] over">
+        <div className="bg-[color:var(--background)] h-[100vh]">
             <Navigation />
             <FormBaseSignUp />
-            <div className="flex justify-center flex-col items-center mt-10 pb-24">
+            <div className="flex justify-center flex-col items-center mt-10 ">
                 <div className="flex justify-center flex-col items-center  rounded-xl ">
 
                     <form action="" method="post"></form>
@@ -48,7 +48,7 @@ const RegisterUser = () => {
                                     <div className='flex flex-col text-right justify-end items-end'>
 
                                         <button className="px-10 py-[12px] mt-10  bg-amber-300 rounded-[100px] justify-start items-center gap-2.5 flex text-black " type="submit">S'inscrire</button>
-                                        <NavLink to="/login/signin/user" className={(navData) => (navData.isActive ? "underline bold text-yellow-400" : 'none')}><div className=" pt-5 items-start mb-[13rem] md:mb-[15rem] text-gray-500 underline">Vous avez deja un compte ? Connectez vous ici !</div></NavLink>
+                                        <NavLink to="/login/signin/user" className={(navData) => (navData.isActive ? "underline bold text-yellow-400" : 'none')}><div className=" pt-5 items-start text-gray-500 underline">Vous avez deja un compte ? Connectez vous ici !</div></NavLink>
 
                                     </div>
 
