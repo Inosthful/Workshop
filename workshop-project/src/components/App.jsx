@@ -10,7 +10,7 @@ import Login from '../pages/Login';
 import SignInUser from '../pages/SignInUser';
 import SignInOrg from '../pages/SignInOrg';
 import RegisterUser from '../pages/RegisterUser';
-import RegisterOrg from '../pages/RegisteroRG';
+import RegisterOrg from '../pages/RegisterOrg';
 
 
 import mapboxgl from 'mapbox-gl';

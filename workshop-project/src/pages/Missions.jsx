@@ -132,8 +132,8 @@ const Missions = () => {
                 <p className="mb-4">{selectedMission?.description}</p>
                 <div className="flex flex-wrap mb-4">
                     <div className="w-full md:w-1/2 lg:w-1/3 p-2">
-                        <h2 className="text-lg font-bold mb-2">Location</h2>
-                        <p>{selectedMission?.location}</p>
+                        <h2 className="text-lg font-bold mb-2">Distance</h2>
+                        <p>{selectedMission?.distance} km</p>
                     </div>
                     <div className="w-full md:w-1/2 lg:w-1/3 p-2">
                         <h2 className="text-lg font-bold mb-2">Date</h2>
