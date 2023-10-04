@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-class AuthService {
+class Mission {
   constructor() {
     let service = axios.create({
       baseURL: 'http://localhost:3000/mission',
@@ -21,3 +21,12 @@ class AuthService {
 
 }
 
+(async () => {
+    const mission = new Mission();
+    try {
+      const data = await Mission.signinUser();
+      console.log(data);
+    } catch (error) {
+      console.error('Une erreur s\'est produite :', error);
+    }
+  })();
