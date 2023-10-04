@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-class Mission {
+export class Mission {
   constructor() {
     let service = axios.create({
       baseURL: 'http://localhost:3000/mission',
@@ -9,24 +9,24 @@ class Mission {
     this.service = service;
   }
 
-  async signinUser() {
-      return await this.service.get('/getAllMission')
-      .then((response) => {
-        return response['data']
-      })
-      .catch((e) => {
-        throw e
-      })
+    async getAllMissions() {
+        return await this.service.get('/getAllMission')
+        .then((response) => {
+          return response['data']
+        })
+        .catch((e) => {
+          throw e
+        })
   }
 
 }
-
-(async () => {
-    const mission = new Mission();
-    try {
-      const data = await Mission.signinUser();
-      console.log(data);
-    } catch (error) {
-      console.error('Une erreur s\'est produite :', error);
-    }
-  })();
+// console.log('test');
+// (async () => {
+//     const mission = new Mission();
+//     try {
+//       const data = await mission.getAllMissions();
+//       console.log(data);
+//     } catch (error) {
+//       console.error('Une erreur s\'est produite :', error);
+//     }
+// })();
