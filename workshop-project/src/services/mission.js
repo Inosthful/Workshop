@@ -20,13 +20,4 @@ export class Mission {
   }
 
 }
-// console.log('test');
-// (async () => {
-//     const mission = new Mission();
-//     try {
-//       const data = await mission.getAllMissions();
-//       console.log(data);
-//     } catch (error) {
-//       console.error('Une erreur s\'est produite :', error);
-//     }
-// })();
+
