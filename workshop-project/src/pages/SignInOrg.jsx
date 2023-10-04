@@ -18,14 +18,14 @@ const SignInOrg = () => {
                 <div className="flex flex-row gap-4 mt-10 text-center p-10 px-6">
                 <div className=""> 
 
-                <input className="rounded-2xl" placeholder="Mail" type="email" /></div>
+                <input className="rounded-[2rem] bg-gray-200 h-8 md:h-10" placeholder=" Mail" type="email" /></div>
             
             <div>
             <div className=""> 
-        
-                <input className="rounded-2xl" placeholder="Mot de passe" type="password" /></div>
+
+                <input className="rounded-[2rem] h-8 md:h-10" placeholder=" Mot de passe" type="password" /></div>
                 <br />
-                <a href="/" className="text-blue-400 underline ">mot de passe oublié</a>
+                <a href="/" className="text-blue-400 underline  ">mot de passe oublié</a>
             </div>
 
             </div>

@@ -19,20 +19,20 @@ const RegisterUser = () => {
                         <div className="flex flex-row gap-4 pb-2">
                             <div className=''>
                                 {/* <label htmlFor="">Nom : </label> */}
-                                <input className="rounded-2xl" placeholder="Nom" type="text" /></div>
+                                <input className="rounded-[2rem] h-8 md:h-10" placeholder=" Nom" type="text" /></div>
                             <div className="">
                                 {/* <label htmlFor="">Prénom : </label> */}
-                                <input className="rounded-2xl" placeholder="Prenom" type="text" /></div>
+                                <input className="rounded-[2rem] h-8 md:h-10" placeholder=" Prenom" type="text" /></div>
                         </div>
                         <div className='flex flex-row gap-4 pb-2'>
                             <div className="">
 
-                                <input className="rounded-2xl" placeholder="Mail" type="email" /></div>
+                                <input className="rounded-[2rem] h-8 md:h-10" placeholder=" Mail" type="email" /></div>
 
                             <div>
                                 <div className="">
 
-                                    <input className="rounded-2xl" placeholder="Age" type="number" /></div>
+                                    <input className="rounded-[2rem] h-8 md:h-10" placeholder=" Age" type="number" /></div>
                                 <br />
 
                             </div>
@@ -40,7 +40,7 @@ const RegisterUser = () => {
                         <div className='flex flex-row justify-center'>
                             <div className="">
 
-                                <input className="rounded-2xl" placeholder="Password" type="password" /></div>
+                                <input className="rounded-[2rem] h-8 md:h-10" placeholder=" Password" type="password" /></div>
 
                             <div>
 
@@ -51,7 +51,7 @@ const RegisterUser = () => {
                     </div>
 
                     <button className="px-10 py-[12px] mt-10  bg-amber-300 rounded-[100px] justify-start items-center gap-2.5 flex text-black " type="submit">S'inscrire</button>
-                    <NavLink to="/login/register/org"  className={(navData) => (navData.isActive ? "underline bold text-yellow-400" : 'none')}><div className=" pt-5 items-start mb-[13rem] md:mb-[15rem] text-gray-500 underline">Vous avez deja un compte ? Connectez vous ici !</div></NavLink> 
+                    <NavLink to="/login/signin/user"  className={(navData) => (navData.isActive ? "underline bold text-yellow-400" : 'none')}><div className=" pt-5 items-start mb-[13rem] md:mb-[15rem] text-gray-500 underline">Vous avez deja un compte ? Connectez vous ici !</div></NavLink> 
                 </div>
 
             </div>
