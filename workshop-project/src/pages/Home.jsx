@@ -18,7 +18,6 @@ const Home = () => {
 
             <Footer/>
         </div>
- 
     );
 };
 

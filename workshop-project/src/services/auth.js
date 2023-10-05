@@ -18,6 +18,5 @@ class AuthService {
         throw e
       })
   }
-
 }
 
