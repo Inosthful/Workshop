@@ -40,6 +40,7 @@ const Missions = () => {
             essential: true
         });
     };
+    
 
     useEffect(() => {
         if (map.current) return;
@@ -84,6 +85,10 @@ const Missions = () => {
             .catch((error) => {
                 console.error('Erreur lors de la récupération des missions :', error);
             });
+
+            map.current.once('load', () => {
+                map.current.resize();
+            });
     }, []);
 
     return (
@@ -100,9 +105,7 @@ const Missions = () => {
                 }
             </div>
             <MissionDetail mission={selectedMission} open={open} onClose={() => setOpen(false)} />
-            <div className="flex flex-col justify-center items-center fixed h-[100vh] w-[calc(100%-430px)] right-0 top-0 bottom-0 z-0">
-                <div ref={mapContainer} className="map-container w-[100%] h-[100%] "></div>
-            </div>
+            <div ref={mapContainer} className="map-container h-[100vh] fixed w-[calc(100%-430px)] right-0 top-0 bottom-0 z-0"></div>
         </div>
     );
 };

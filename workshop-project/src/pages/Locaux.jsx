@@ -6,7 +6,6 @@ const Locaux = () => {
         <div>
             <Navigation />
             <h1>Hello !</h1>
- 
         </div>
     );
 };

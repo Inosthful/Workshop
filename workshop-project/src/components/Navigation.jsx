@@ -1,6 +1,7 @@
 import { User } from "lucide-react";
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Button from "./Button";
 
 const Navigation = () => {
     return (
@@ -10,8 +11,6 @@ const Navigation = () => {
                     <NavLink to="/" className={(navData) => (navData.isActive ? "active-style" : 'none')}>
                         <img className="w-[60px] h-[54px]" src="/src/assets/white 1.png" />
                     </NavLink>
-
-
                 </div>
                 <div className="justify-start items-center gap-[35px] flex text-white">
                     <div className="justify-start items-center gap-[30px] flex">
@@ -29,35 +28,17 @@ const Navigation = () => {
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/missions" className={(navData) => (navData.isActive ? "active-style" : 'none')}>
-                                        <div className="px-5 py-[12px] text-[14px] md:text-[17px] bg-amber-300 rounded-[100px] justify-start items-center gap-2.5 flex text-black">
-                                            Proposer son aide </div>
-                                    </NavLink>
+                                    <Button text="proposez son aide" href="/missions" />
                                 </li>
-                                if ( 
-                                ?
-                                <li>
-                                    <NavLink to="/missions" className={(navData) => (navData.isActive ? "active-style" : 'none')}>
-
-                                        <div className="">
-                                            <User />
-                                        </div>
-                                    </NavLink>
-                                </li>
-
                                 <li>
                                     <NavLink to="/login/signin/user" className={(navData) => (navData.isActive ? "active-style" : 'none')}>
-
                                         <div className="">
                                             <User />
                                         </div>
                                     </NavLink>
                                 </li>
-
-
                             </ul>
                         </div>
-
                     </div>
 
                 </div>

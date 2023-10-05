@@ -1,6 +1,7 @@
 import { X } from 'lucide-react';
 import React from 'react';
 import { CSSTransition } from 'react-transition-group';
+import Button from './Button';
 
 const MissionDetail = ({ open, mission, onClose }) => {
   return (
@@ -36,8 +37,8 @@ const MissionDetail = ({ open, mission, onClose }) => {
           <p>{mission?.mail_organisateur}</p>
           <p>{mission?.telephone_organisateur}</p>
         </div>
-        <div className="flex justify-center mt-4">
-          <button className="px-5 py-2 rounded-[100px] bg-amber-300 text-white font-bold text-lg">Proposer mon aide</button>
+        <div className="flex flex-row justify-between items-center mt-4">
+          <Button text="Proposez votre aide" href="/missions" />
         </div>
       </div>
     </CSSTransition>
