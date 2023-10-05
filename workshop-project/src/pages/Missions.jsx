@@ -4,24 +4,7 @@ import MissionTile from '../components/Tile';
 import { renderToString } from 'react-dom/server';
 import { ArrowLeft, X } from 'lucide-react';
 import { Mission } from '../services/mission'
-<<<<<<< HEAD
-
-(async () => {
-    const mission = new Mission();
-    try {
-      const data = await mission.getAllMissions();
-      console.log(data);
-    } catch (error) {
-      console.error('Une erreur s\'est produite :', error);
-    }
-})();
-
-const searchMissions = (search) => {
-    return missions.filter((mission) => mission.name.toLowerCase().includes(search.toLowerCase()));
-}
-=======
 import { CSSTransition } from 'react-transition-group';
->>>>>>> bfd45a570f62336a212ab038e2a901392274f1b6
 
 function flyTo(map, location) {
     map.flyTo({
