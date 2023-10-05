@@ -20,12 +20,12 @@ const MissionTile = ({ mission, onClick }) => {
                     </div>
                 </div>
             </div>
-            <a href="#" className="flex items-center justify-between p-5 text-sm font-medium text-center text-[color:var(--on-primary)] bg-[color:var(--primary-shade)] transition-all hover:bg-[color:var(--background)] hover:text-[color:var(--on-background)]" onClick={onClick}>
+            <button className="flex items-center justify-between p-5 text-sm font-medium text-center text-[color:var(--on-primary)] bg-[color:var(--primary-shade)] transition-all hover:bg-[color:var(--background)] hover:text-[color:var(--on-background)]" onClick={onClick}>
                 Voir la mission
                 <span className="ml-2" aria-hidden="true">
                     <ArrowRight size={16} />
                 </span>
-            </a>
+            </button>
         </div>
     );
 }

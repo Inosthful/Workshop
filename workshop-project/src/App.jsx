@@ -11,6 +11,7 @@ import SignInUser from './pages/SignInUser';
 import SignInOrg from './pages/SignInOrg';
 import RegisterUser from './pages/RegisterUser';
 import RegisterOrg from './pages/RegisterOrg';
+import Discount from './pages/Discount';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="/login/signin/org" element={<SignInOrg />} />
         <Route path="/login/register/user" element={<RegisterUser />} />
         <Route path="/login/register/org" element={<RegisterOrg />} />
+        <Route path="/discount" element={<Discount />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </Router>

@@ -36,6 +36,9 @@ const MissionDetail = ({ open, mission, onClose }) => {
           <p>{mission?.mail_organisateur}</p>
           <p>{mission?.telephone_organisateur}</p>
         </div>
+        <div className="flex justify-center mt-4">
+          <button className="px-5 py-2 rounded-[100px] bg-amber-300 text-white font-bold text-lg">Proposer mon aide</button>
+        </div>
       </div>
     </CSSTransition>
   );

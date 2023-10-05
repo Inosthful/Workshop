@@ -24,16 +24,16 @@ const Navigation = () => {
                                     </NavLink>
                                 </li>
                                 <li>
+                                    <NavLink to="/discount" className={(navData) => (navData.isActive ? "active-style" : 'none')}>
+                                        <div className="" />Convertir mes points
+                                    </NavLink>
+                                </li>
+                                <li>
                                     <NavLink to="/missions" className={(navData) => (navData.isActive ? "active-style" : 'none')}>
                                         <div className="px-5 py-[12px] text-[14px] md:text-[17px] bg-amber-300 rounded-[100px] justify-start items-center gap-2.5 flex text-black">
                                             Proposer son aide </div>
                                     </NavLink>
                                 </li>
-
-
-
-
-
                                 if ( 
                                 ?
                                 <li>

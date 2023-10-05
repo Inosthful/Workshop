@@ -51,6 +51,15 @@ const Missions = () => {
             attributionControl: false
         });
 
+        map.current.addControl(new mapboxgl.GeolocateControl({
+            positionOptions: {
+                enableHighAccuracy: true
+            },
+            trackUserLocation: false
+        }));
+
+        map.current.addControl(new mapboxgl.NavigationControl());
+
         missionService.getAllMissions()
             .then((missions) => {
                 setMissions(missions);
@@ -59,8 +68,9 @@ const Missions = () => {
                     const m_location = mission.m_location.split(',').reverse();
                     const el = document.createElement('div');
                     el.className = 'marker';
-
-                    new mapboxgl.Marker(el)
+                    
+                    // Set marker offset to the bottom
+                    new mapboxgl.Marker(el, { offset: [0, -23] })
                         .setLngLat(m_location)
                         .addTo(map.current);
 
