@@ -2,7 +2,7 @@ import { useRef, useEffect, useState } from 'react';
 import Navigation from '../components/Navigation';
 import MissionTile from '../components/Tile';
 import { renderToString } from 'react-dom/server';
-import { ArrowLeft, X } from 'lucide-react';
+import { ArrowLeft, Link, X } from 'lucide-react';
 import { Mission } from '../services/mission'
 
 const searchMissions = (search) => {
@@ -84,7 +84,7 @@ const Missions = () => {
         <div>
             <div className="flex gap-4 flex-col z-50 px-5 pb-5 bg-[color:var(--background)] fixed overflow-auto h-[100%] w-[430px] left-0 top-0 bottom-0">
                 <div className="sticky bg-[color:var(--background)] py-5 top-0 z-10 flex flex-row items-center gap-4">
-                    <ArrowLeft size={24} color="var(--on-background)" className="cursor-pointer" onClick={() => window.history.back()} />
+                        <ArrowLeft size={24} color="var(--on-background)" className="cursor-pointer" onClick={() => window.history.back()} />
                     <input className="py-2 px-5 rounded-[100px] border-2 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-transparent w-[100%]" type="text" placeholder="Rechercher une mission" value={search} onChange={(e) => setSearch(e.target.value)} />
                 </div>
                 {
@@ -95,8 +95,8 @@ const Missions = () => {
             </div>
             <CSSTransition
             in={open ? true : false}
-            timeout={300} // Durée de l'animation en millisecondes
-            classNames="slide" // Classe CSS de l'animation
+            timeout={300}
+            classNames="slide"
             unmountOnExit>
                 <div className={`fixed top-0 bottom-0 left-[430px] z-10 bg-white p-5 w-[400px] h-[100%] overflow-auto shadow-xl`}>
                     <div className="flex flex-row justify-between items-center mb-4">

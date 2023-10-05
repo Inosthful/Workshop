@@ -33,9 +33,6 @@ const Navigation = () => {
 
 
 
-
-                                if ( 
-                                ?
                                 <li>
                                     <NavLink to="/missions" className={(navData) => (navData.isActive ? "active-style" : 'none')}>
 
@@ -44,7 +41,6 @@ const Navigation = () => {
                                         </div>
                                     </NavLink>
                                 </li>
-                                ) :
 
                                 <li>
                                     <NavLink to="/login/signin/user" className={(navData) => (navData.isActive ? "active-style" : 'none')}>
@@ -54,9 +50,6 @@ const Navigation = () => {
                                         </div>
                                     </NavLink>
                                 </li>
-
-
-
 
 
                             </ul>
