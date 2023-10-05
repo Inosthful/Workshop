@@ -2,22 +2,34 @@ import axios from 'axios';
 
 export class Mission {
   constructor() {
-    this.service = axios.create({
-      baseURL: 'http://localhost:3000/mission',
+    let service = axios.create({
+      baseURL: 'http://localhost:3000',
       withCredentials: true,
       headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Origin': '*'
       }
     });
   }
 
-  async getAllMissions() {
-    try {
-      const { data } = await this.service.get('/getAllMission');
-      return data;
-    } catch (error) {
-      throw error;
-    }
+    async getAllMissions() {
+        return await this.service.get('/mission/getAllMission')
+        .then((response) => {
+          return response['data']
+        })
+        .catch((e) => {
+          throw e
+        })
   }
+
 }
+// (async () => {
+//     const mission = new Mission();
+//     try {
+//       const data = await mission.getAllMissions();
+//       console.log(data);
+//     } catch (error) {
+//       console.error('Une erreur s\'est produite :', error);
+//     }
+// })();
+

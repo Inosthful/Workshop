@@ -9,7 +9,7 @@ const ProposeHelp = () => {
 
 <NavLink to="/missions" className={(navData) => (navData.isActive ? "active-style" : 'none')} >
 
-<div className="px-5 py-[15px] md:py-[20px] md:px-[15px] md:text-xl bg-amber-300 rounded-[100px] justify-start items-center gap-2.5 flex text-black ">
+<div className="px-5 py-[15px] md:py-[20px] md:px-[15px] md:text-xl bg-amber-300 rounded-[100px] justify-start items-center gap-2.5 flex text-black " data-aos="fade-up">
     Proposer son aide </div>
 </NavLink>
 </div>
