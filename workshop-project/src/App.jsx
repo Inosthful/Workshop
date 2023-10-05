@@ -10,7 +10,7 @@ import Login from './pages/Login';
 import SignInUser from './pages/SignInUser';
 import SignInOrg from './pages/SignInOrg';
 import RegisterUser from './pages/RegisterUser';
-import RegisterOrg from './pages/RegisterOrg';
+import RegisterOrg from './pages/RegisteroRG';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
