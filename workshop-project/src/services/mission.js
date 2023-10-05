@@ -10,7 +10,6 @@ export class Mission {
         'Access-Control-Allow-Origin': '*'
       }
     });
-    this.service = service;
   }
 
     async getAllMissions() {
@@ -33,3 +32,4 @@ export class Mission {
 //       console.error('Une erreur s\'est produite :', error);
 //     }
 // })();
+

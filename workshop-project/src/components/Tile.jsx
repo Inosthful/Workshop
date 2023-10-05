@@ -13,7 +13,7 @@ const MissionTile = ({ mission, onClick }) => {
                 <div className="flex items-center justify-between mt-5">
                     <div className="flex items-center bg-[color:var(--primary-shade)] rounded-[100px] p-3">
                         <Calendar size={16} className="mr-2" />
-                        <p className="text-sm font-normal text-[color:var(--on-primary)]">{mission.m_date}</p>
+                        <p className="text-sm font-normal text-[color:var(--on-primary)]">{new Date(mission.m_date).toLocaleDateString()}</p>
                     </div>
                     <div className="flex items-center bg-[color:var(--primary-shade)] rounded-[100px] p-3">
                         <p className="text-sm font-normal text-[color:var(--on-primary)]">2 km</p>

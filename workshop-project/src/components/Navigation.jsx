@@ -29,27 +29,36 @@ const Navigation = () => {
                                             Proposer son aide </div>
                                     </NavLink>
                                 </li>
-                        
-                                      <li>
-                                    <NavLink to="/user" className={(navData) => (navData.isActive ? "active-style" : 'none')}>
+
+
+
+
+
+                                if ( 
+                                ?
+                                <li>
+                                    <NavLink to="/missions" className={(navData) => (navData.isActive ? "active-style" : 'none')}>
+
                                         <div className="">
                                             <User />
                                         </div>
                                     </NavLink>
-                                    </li>
+                                </li>
+                                ) :
 
-                                    <li>
+                                <li>
                                     <NavLink to="/login/signin/user" className={(navData) => (navData.isActive ? "active-style" : 'none')}>
 
                                         <div className="">
                                             <User />
                                         </div>
                                     </NavLink>
-                                    </li>
-                                
-                              
+                                </li>
 
-                           
+
+
+
+
                             </ul>
                         </div>
 
