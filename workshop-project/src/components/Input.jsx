@@ -1,15 +1,14 @@
+import React, { forwardRef } from "react";
 
-import '../styles/Header.css'
-const Input = ({...props}) => {
+// Utilisez React.forwardRef() pour créer un composant de fonction avec une référence
+const Input = forwardRef((props, ref) => {
+  return (
+    <input
+      ref={ref}
+      className="rounded-[2rem] h-8 md:h-10 bg-zinc-200"
+      {...props}
+    />
+  );
+});
 
-
-    return (
-  
-    <input className="rounded-[2rem] h-8 md:h-10 bg-zinc-200" {...props}/>
-
-    );
-  };
-  
-  export default Input
-  
-
+export default Input;
