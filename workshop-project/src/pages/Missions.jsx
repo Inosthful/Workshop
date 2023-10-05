@@ -5,6 +5,16 @@ import { renderToString } from 'react-dom/server';
 import { ArrowLeft, X } from 'lucide-react';
 import { Mission } from '../services/mission'
 
+(async () => {
+    const mission = new Mission();
+    try {
+      const data = await mission.getAllMissions();
+      console.log(data);
+    } catch (error) {
+      console.error('Une erreur s\'est produite :', error);
+    }
+})();
+
 const searchMissions = (search) => {
     return missions.filter((mission) => mission.name.toLowerCase().includes(search.toLowerCase()));
 }
