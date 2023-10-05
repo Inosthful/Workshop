@@ -2,12 +2,13 @@ import axios from 'axios';
 
 export class Mission {
   constructor() {
-    let service = axios.create({
+
+    this.service = axios.create({
       baseURL: 'http://localhost:3000',
       withCredentials: true,
       headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
+        'Access-Control-Allow-Origin': '*',
       }
     });
   }

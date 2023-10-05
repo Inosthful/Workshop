@@ -4,7 +4,6 @@ import MissionTile from '../components/Tile';
 import { renderToString } from 'react-dom/server';
 import { ArrowLeft, X } from 'lucide-react';
 import { Mission } from '../services/mission'
-import { CSSTransition } from 'react-transition-group';
 import MissionDetail from '../components/MissionDetail';
 
 function flyTo(map, location) {
