@@ -16,6 +16,8 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 import mapboxgl from 'mapbox-gl';
+import OrgaList from './pages/OrgaList';
+import Orga from './pages/Orga';
 mapboxgl.accessToken = 'pk.eyJ1IjoianVqdTE0OSIsImEiOiJjbG5hNHR2MjUwMGRjMmlvM2l3amV0aTYwIn0.QlDL3RVdUNFWPx9gfMPQgA';
 
 const App = () => {
@@ -36,6 +38,8 @@ const App = () => {
         <Route path="/login/register/user" element={<RegisterUser />} />
         <Route path="/login/register/org" element={<RegisterOrg />} />
         <Route path="/discount" element={<Discount />} />
+        <Route path="/organisations" element={<OrgaList />} />
+        <Route path="/organisation/:id" element={<Orga />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </Router>

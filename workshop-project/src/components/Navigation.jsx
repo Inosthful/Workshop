@@ -17,8 +17,8 @@ const Navigation = () => {
                         <div className="navigation ">
                             <ul className="flex flex-row items-center  gap-3 lg:gap-6 lg:gap-12  text-[14px] md:text-[17px]">
                                 <li>
-                                    <NavLink to="/locaux" className={(navData) => (navData.isActive ? "active-style" : 'none')}>
-                                        <div className="" /> Nos locaux
+                                    <NavLink to="/organisations" className={(navData) => (navData.isActive ? "active-style" : 'none')}>
+                                        <div className="" />Les organisations
 
                                     </NavLink>
                                 </li>
@@ -28,7 +28,7 @@ const Navigation = () => {
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <Button text="proposez son aide" href="/missions" />
+                                    <Button text="Proposez son aide" href="/missions" />
                                 </li>
                                 <li>
                                     <NavLink to="/login/signin/user" className={(navData) => (navData.isActive ? "active-style" : 'none')}>

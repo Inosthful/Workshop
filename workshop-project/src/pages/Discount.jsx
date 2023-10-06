@@ -72,7 +72,8 @@ const Discount = () => {
             <Navigation />
             <div className="flex flex-col items-center justify-center pt-20 bg-[color:var(--background)]">
                 <h1 className="text-6xl font-bold mb-10 text-[color:var(--on-background)]">Convertir mes points</h1>
-                <div className="flex flex-row items-center justify-center">
+                <p className="text-xl text-[color:var(--on-background)]">Retrouvez ici tout les reductions que vous pouvez obtenir en fonction de vos points.</p>
+                <div className="flex flex-row items-center justify-center gap-5 mt-20">
                     <div className="px-5 py-[12px] text-[14px] md:text-[17px] bg-[color:var(--primary)] rounded-[100px] justify-start items-center gap-2.5 flex text-black">
                         <h2 className="text-2xl text-[color:var(--on-primary)]">{points} points</h2>
                     </div>
